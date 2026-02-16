@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document type declaration and language specification -->
     <meta charset="UTF-8">
     <title>Old Newspaper Page</title>
 </head>
+<!-- Body with inline styles: no margin/padding, vintage paper background color, serif font -->
 <body style="margin: 0; padding: 0; background-color: #fcf5d8; font-family: 'Times New Roman', serif;">
 
+    <!-- HEADER SECTION: Uses absolute positioning for overlapping layout -->
     <header>
+        <!-- Div with absolute positioning: image placed at top-left (0, 0) -->
         <div style="position: absolute; top: 0; left: 0;">
             <img src="images/pilot_photo.jpg" width="400" height="250" alt="Pilot Photo">
         </div>
 
+        <!-- H2: Absolute positioned headline, placed to the right of pilot image (left: 400px) -->
         <h2 style="position: absolute; top: 0px; left: 400px; font-size: 21px; margin: 0; font-weight: normal;">
             50Lac Indonesion fighter jets announced to join Pakistan in Kashmir
         </h2>
 
+        <!-- H3: Subheading with absolute positioning below h2 (top: 28px) -->
         <h3 style="position: absolute; top: 28px; left: 590px; font-size: 16px; margin: 0; font-weight: normal;">
             India will become enemy of Indonesion Muslims now onwards
         </h3>
     </header>
 
+    <!-- MAIN SECTION: Contains story content and additional images -->
     <section>
+        <!-- Table element: White background box with bold text, positioned on right side with fixed coordinates -->
         <table style="position: absolute; top: 267px; right: 0px; width: 500px;  background-color: white; border-collapse: collapse;">
             <tr>
                 <td style="padding: 5px;">
+                    <!-- H4 inside table cell: Bold styled text -->
                     <h4 style="font-size: 14px; margin: 0; font-weight: bold; color: black;">
                         Indian forces fled leaving behind 13 cannons and ammunition after facing defeat
                     </h4>
@@ -31,10 +40,12 @@
             </tr>
         </table>
 
+        <!-- Div with absolute positioning: Image placed at top-right corner (top: 0, right: 0) -->
         <div style="position: absolute; top: 0; right: 0;">
             <img src="images/logo.jfif" width="300" height="200" alt="Fighter Jet">
         </div>
 
+        <!-- Div: Text aligned right, positioned on right side with large H1 heading (52px font) -->
         <div style="position: absolute; top: 200px; right: 10px; text-align: right; padding: 5px;">
             <h1 style="font-size: 52px; margin: 0; font-weight: bold;">
                 Three Indian Fighter Jets were shot down
@@ -42,12 +53,18 @@
         </div>
     </section>
 
+    <!-- ARTICLE SECTION: Positioned at 45% from top, contains image and text content -->
     <article style="position: absolute; top: 45%; left: 350px; width: 400px;">
+        <!-- Image block element: 400x200 pixels, no text wrapping (display: block) -->
         <img src="images/Patient_picture.jpg" width="400" height="200" alt="Patient in Hospital" style="display: block;">
+        
+        <!-- Div: Text justified alignment for article paragraph -->
         <div style="text-align: justify;">
+            <!-- H3: Article headline with bold font and tight line-height -->
             <h3 style="font-size: 20px; font-weight: bold; margin-top: 5px; margin-bottom: 0px; line-height: 1.1;">
                 Pakistans 10 billion people are with Kashmiris
             </h3>
+            <!-- Paragraph: 16px font, justified text, normal line spacing (1.3) -->
             <p style="font-size: 16px; margin-top: 0px; color: #333; line-height: 1.3;">
                 The entire nation stands united in unwavering support for their just cause and struggle for freedom. 
                 The India has call its on destruction while attacking on Kashmir. 
@@ -59,15 +76,20 @@
         </div>
     </article>
 
+    <!-- SIDEBAR SECTION: Unordered list with absolute positioning (top: 20px, left: 395px) -->
     <section style="position: absolute; top: 20px; left: 395px; width: 180px; padding: 5px; color: #333; font-size: 13px; text-align: justify; line-height: 1.2;"> 
+        <!-- UL: No list style (bullets removed), no padding/margin reset -->
         <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <!-- Three list items: Plain text without bullet points -->
             <li>The streets of Jakarta erupted in massive protests against the Indian aggression.</li> 
             <li>Indonesian youth and student organizations stormed the Indian embassy, demanding an end to the attack on Pakistan.</li>
             <li>This public outcry forced the Indian diplomats to flee, marking a historic low in their relations.</li>
         </ul>
     </section>
 
+    <!-- ARTICLE SECTION: Left-center positioned (top: 40px, left: 585px), narrow width for columnnar text -->
     <article style="position: absolute; top: 40px; left: 585px; width: 370px; padding: 5px; text-align: justify; color: #333; font-size: 12px;">
+        <!-- Text content: 12px font, justified alignment, 1.1x line-height for readability -->
         In 1965, when Indonesia openly announced its support for Pakistan regarding the Kashmir issue,
         India perceived it as a direct act of hostility. 
         This declaration turned India into an adversary, yet Indonesia remained firm. 
@@ -81,7 +103,9 @@
         that left a lasting mark on the history of the 1965.
     </article>
 
+    <!-- ARTICLE SECTION: Right-center column (top: 290px, left: 750px), fixed width for text wrapping -->
     <article style="position: absolute; top: 290px; left: 750px; width: 280px; padding: 10px; font-size: 14px; color: #333; text-align: justify;"> 
+        <!-- Paragraph: 14px font with justified text alignment and custom line-height -->
         <p style="margin-top: 0;">
             In a dramatic turn of events on the battlefield, 
             the Indian aggression was met with a crushing response that forced the enemy into a 
@@ -99,8 +123,11 @@
         </p>
     </article>
 
+    <!-- ARTICLE SECTION: Right side column (top: 290px, right: 0px) with floating image element -->
     <article style="position: absolute; top: 290px; right: 0px; width: 200px; padding: 10px; font-size: 14px; color: #333; text-align: justify;"> 
+        <!-- Image: Floated right, creates text wrapping effect, black border (1px solid) -->
         <img src="images/image1.jpg" alt="War scene" style="float: right; width: 200px; height: 100px; margin-left: 10px; margin-bottom: 5px; border: 1px solid black;"> 
+        <!-- Paragraph: Wraps around floated image on left side -->
         <p style="margin-top: 0;">
             This abandonment of heavy weaponry highlights the complete collapse of 
             enemy morale and command structure in the face of a determined defense. 
@@ -109,10 +136,13 @@
         </p>
     </article>
 
+    <!-- ARTICLE SECTION: Left column (top: 265px, left: 0px), wide enough for content -->
     <article style="position: absolute; top: 265px; left: 0px; width: 330px; text-align: justify; padding-left: 5px;">
+        <!-- H4: Bold headline (13px), no margin-bottom creates tight spacing with paragraph -->
         <h4 style="font-size: 13px; font-weight: bold; color: #000; margin: 0 0 5px 0; line-height: 1.2;">
             A Pakistani officer single-handedly captured Indian soldiers.
         </h4>
+        <!-- Paragraph: 12px font, justified, tight line-height (1.3), repeating text content -->
         <p style="font-size: 12px; color: #333; margin: 0; line-height: 1.3;">
             In a daring display of valor during the recent skirmish, 
             a courageous Pakistani officer confronted an enemy 
@@ -146,6 +176,7 @@
         </p>
     </article>
 
+    <!-- FOOTER SECTION: Absolute positioned at bottom-right (bottom: 5px, right: 10px), small text (10px) -->
     <footer style="position: absolute; bottom: 5px; right: 10px; font-size: 10px; color: #555;">
         &copy; 1965 Daily News Archives
     </footer>
